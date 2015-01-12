@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "A Node CLI application to flash an image (useful for Raspberry Pi distros, etc) onto a mounted volume.",
   "main": "index.js",
+  "preferGlobal": "true",
+  "bin": {
+    "sd-flash": "cli.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,5 +22,10 @@
   "bugs": {
     "url": "https://github.com/green-arrow/sd-flash/issues"
   },
-  "homepage": "https://github.com/green-arrow/sd-flash"
+  "homepage": "https://github.com/green-arrow/sd-flash",
+  "dependencies": {
+    "path": "^0.11.14",
+    "prompt": "^0.2.14",
+    "shelljs": "^0.3.0"
+  }
 }
